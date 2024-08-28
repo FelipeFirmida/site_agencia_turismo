@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahêa Turismo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fw-bold"><i class="bi bi-triangle-fill white me-2"></i>Bahêa Turismo</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-lg-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-empresa" class="nav-link section-title"><i class="bi bi-house-door me-1"></i>Sobre a Empresa</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#passeios" class="nav-link section-title"><i class="bi bi-bus-front me-1"></i>Passeios</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link section-title"><i class="bi bi-chat-left-text me-1"></i>Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-empresa">
+            <div class="carousel slide" data-bs-ride="carousel" id="menu-carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/imagens/farol-tapua-new.jpg" alt="Forte de Itapuã">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imagens/comidasbaianas-carousel.jpeg" alt="Comidas típicas da Bahia">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/pelourinho-new.jpg" alt="Rua no Pelourinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/lacerda-sunset.jpg" alt="Pôr do sol no Elevador Lacerda">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#menu-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#menu-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#menu-carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row pt-5 pb-5">
+                        <div class="col-lg-5 d-flex justify-content-center">
+                            <img src="/imagens/desenho-bahia.jpg" alt="desenho de uma baiana em frente a uma porta" class="d-block h-100"/>
+                        </div>
+                        <div class="col-lg-7">
+                            <h2 class="section-title">Sobre nós</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda placeat tempore deleniti porro fuga asperiores saepe totam dignissimos animi! A reiciendis quo dignissimos hic illo ipsum totam ullam quam voluptas!</p>
+                            <h3 class="section-title">Funcionários</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos rerum blanditiis cupiditate est, soluta exercitationem ipsa sit ullam? Natus eius maxime voluptatum, cum necessitatibus est! Esse voluptatem ab a.
+                            </p>
+                            <ul>
+                                <li>
+                                    Fulano: Lorem ipsum
+                                </li>
+                                <li>
+                                    Ciclana: Lorem ipsum
+                                </li>
+                                <li>
+                                    Beltrana: Lorem ipsum
+                                </li>
+                                <li>
+                                    Tetê: Lorem ipsum
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="passeios" class="pb-5">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <h2 class="section-title text-center">Nossos Passeios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 me-3">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-passeios">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#historicos" class="nav-link fw-bold fs-5 mt-5 text-color active">Históricos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#praias" class="nav-link fw-bold fs-5 mt-3 text-color">Praias e ilhas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#museus" class="nav-link fw-bold fs-5 mt-3 mb-3 text-color">Museus</button>
+                            </nav>
+                        </aside>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="historicos">
+                                <div class="row">
+                                    <div class="col-md-4  col-lg-3">
+                                        <img src="/imagens/lacerda.jpg" alt="elevador lacerda" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Elevador Lacerda</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 sm-ms-1 col-lg-3">
+                                        <img src="/imagens/Pelourinho.jpg" alt="Pelourinho" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Pelourinho</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 sm-ms-1 col-lg-3">
+                                        <img src="/imagens/saofrancisco.jpg" alt="Igreja de São Francisco" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Igreja de São Francisco</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 sm-ms-1 col-lg-3">
+                                        <img src="/imagens/forte-barra.jpg" alt="Forte da Barra" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Forte da Barra</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 sm-ms-1 col-lg-3">
+                                        <img src="/imagens/cruz caída.jpg" alt="Mirante da Cruz Caída" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Mirante da Cruz Caída</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="praias">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/imagens/praiabahia.jpg" alt="Praia do Forte" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Praia do Forte</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/praiabahia2.jpg" alt="Praia 2" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Praia 2</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/praiabahia3.jpg" alt="Praia 3" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Praia 3</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/ilha-dos-frades-4.jpg" alt="Ilha dos Frades" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Ilha dos Frades</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/mergulhobahia.jpg" alt="Mergulhador num antigo naufrágio" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Mergulho no naufrágio</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="museus">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/imagens/mab.jpg" alt="Museu de Arte da Bahia" class="d-block w-100 rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Museu de Arte da Bahia</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/mam03.jpg" alt="museu de arte moderna da bahia" class="d-block w-100 h-auto rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Museu de Arte Moderna</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/imagens/casa-do-carnaval.jpg" alt="Casa do Carnaval" class="d-block w-100 h-auto rounded">
+                                        <h5 class="mt-2 text-color fw-bold">Casa do Carnaval</h5>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <h2 class="section-title text-center pb-5">Fale Conosco</h2>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form action>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-color">Seu nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-color">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-color">Seu telefone(opcional)</label>
+                                <input type="tel" id="tel" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="msg" class="form-label fw-bold text-color">Sua mensagem</label>
+                                <textarea id="msg" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold mt-2 mb-5">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title"><i class="bi bi-people-fill me-2"></i>Redes Sociais</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook text-color fs-5"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-instagram text-color ms-2 me-2 fs-5"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-whatsapp text-color fs-5"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title"><i class="bi bi-geo-alt-fill me-2"></i>Endereço</h3>
+                            <p>
+                                Rua Teste, n. 0101, Bairro Bootstrap, Salvador - BA
+                            </p>
+                        </div>
+                        <div class="row">
+                            <img src="/imagens/pintura-pelourinho.webp" alt="Pintura do pelourinho e do elevador lacerda" id="pintura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
